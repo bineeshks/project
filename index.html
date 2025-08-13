@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bineesh K S - Web Developer & Creative Designer</title>
+    <meta name="description" content="Professional web developer and creative designer specializing in modern websites, e-commerce stores, and visual content that help businesses grow.">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Bineesh K S - Web Developer & Creative Designer">
+    <meta property="og:description" content="I build modern websites, e-commerce stores, and visual content that help businesses grow.">
+    <meta property="og:image" content="og-image.jpg">
+    <meta property="og:url" content="https://bineeshks.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cursor Follower -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <span class="loading-text">BKS</span>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Particles -->
+    <div class="particles-container" id="particles"></div>
+
+    <!-- Header Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <a href="#home" class="nav__logo">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-text">Bineesh K S</span>
+                </a>
+            </div>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link" data-text="Home">
+                            <i data-lucide="home"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link" data-text="About">
+                            <i data-lucide="user"></i>
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link" data-text="Services">
+                            <i data-lucide="briefcase"></i>
+                            <span>Services</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link" data-text="Work">
+                            <i data-lucide="folder"></i>
+                            <span>Work</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link" data-text="Contact">
+                            <i data-lucide="mail"></i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+                
+                <div class="nav__close" id="nav-close">
+                    <i data-lucide="x"></i>
+                </div>
+            </div>
+            
+            <div class="nav__actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <i data-lucide="sun" class="theme-icon light"></i>
+                    <i data-lucide="moon" class="theme-icon dark"></i>
+                </button>
+                
+                <div class="nav__toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero section" id="home">
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <div class="hero__text">
+                        <div class="hero__greeting">
+                            <span class="greeting-icon">👋</span>
+                            <span class="greeting-text">Hello, I'm</span>
+                        </div>
+                        <h1 class="hero__title">
+                            <span class="title-line">Bineesh K S</span>
+                            <span class="title-line gradient-text">Web Developer &</span>
+                            <span class="title-line gradient-text">Creative Designer</span>
+                        </h1>
+                        <p class="hero__description">
+                            I craft exceptional digital experiences that blend creativity with functionality. 
+                            From stunning websites to powerful e-commerce solutions, I bring your vision to life 
+                            with modern technology and innovative design.
+                        </p>
+                        <div class="hero__stats">
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="50">0</span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="3">0</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="100">0</span>
+                                <span class="stat-label">Happy Clients</span>
+                            </div>
+                        </div>
+                        <div class="hero__buttons">
+                            <a href="#work" class="btn btn--primary">
+                                <span>View My Work</span>
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                            <a href="#contact" class="btn btn--secondary">
+                                <span>Let's Talk</span>
+                                <i data-lucide="message-circle"></i>
+                            </a>
+                        </div>
+                        <div class="hero__social">
+                            <a href="#" class="social-link" aria-label="GitHub">
+                                <i data-lucide="github"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="LinkedIn">
+                                <i data-lucide="linkedin"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <i data-lucide="twitter"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <i data-lucide="instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero__visual">
+                        <div class="hero__image-container">
+                            <div class="hero__image-bg"></div>
+                            <img src="images/bineesh.png" alt="Bineesh K S - Web Developer" class="hero__img" loading="eager">
+                            <div class="floating-elements">
+                                <div class="floating-element" data-speed="2">
+                                    <i data-lucide="code-2"></i>
+                                </div>
+                                <div class="floating-element" data-speed="3">
+                                    <i data-lucide="palette"></i>
+                                </div>
+                                <div class="floating-element" data-speed="1.5">
+                                    <i data-lucide="smartphone"></i>
+                                </div>
+                                <div class="floating-element" data-speed="2.5">
+                                    <i data-lucide="zap"></i>
+                                </div>
+                                <div class="floating-element" data-speed="1.8">
+                                    <i data-lucide="globe"></i>
+                                </div>
+                                <div class="floating-element" data-speed="2.2">
+                                    <i data-lucide="database"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero__tech-stack">
+                            <div class="tech-item">
+                                <i data-lucide="code-2"></i>
+                                <span>React</span>
+                            </div>
+                            <div class="tech-item">
+                                <i data-lucide="database"></i>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="tech-item">
+                                <i data-lucide="layers"></i>
+                                <span>Next.js</span>
+                            </div>
+                            <div class="tech-item">
+                                <i data-lucide="paintbrush"></i>
+                                <span>Figma</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+                <span class="scroll-text">Scroll Down</span>
+            </div>
+            <div class="hero__decorations">
+                <div class="decoration-element decoration-1">
+                    <i data-lucide="triangle"></i>
+                </div>
+                <div class="decoration-element decoration-2">
+                    <i data-lucide="circle"></i>
+                </div>
+                <div class="decoration-element decoration-3">
+                    <i data-lucide="square"></i>
+                </div>
+                <div class="decoration-element decoration-4">
+                    <i data-lucide="hexagon"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="about__container container">
+                <div class="section-header">
+                    <span class="section-tag">About Me</span>
+                    <h2 class="section__title">
+                        Crafting Digital Excellence with 
+                        <span class="gradient-text">Passion & Precision</span>
+                    </h2>
+                </div>
+                
+                <div class="about__content">
+                    <div class="about__text">
+                        <p class="about__description">
+                            I'm a passionate web developer and creative designer with a mission to transform ideas into 
+                            extraordinary digital experiences. With expertise spanning modern web technologies and design 
+                            principles, I help businesses establish powerful online presences that drive real results.
+                        </p>
+                        <p class="about__description">
+                            My approach combines technical excellence with creative innovation, ensuring every project 
+                            not only looks stunning but also performs flawlessly across all devices and platforms.
+                        </p>
+                        
+                        <div class="about__highlights">
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i data-lucide="rocket"></i>
+                                </div>
+                                <div class="highlight-content">
+                                    <h4>Lightning Fast</h4>
+                                    <p>Optimized performance with modern technologies</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i data-lucide="shield-check"></i>
+                                </div>
+                                <div class="highlight-content">
+                                    <h4>Quality Assured</h4>
+                                    <p>Rigorous testing and code review processes</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i data-lucide="headphones"></i>
+                                </div>
+                                <div class="highlight-content">
+                                    <h4>24/7 Support</h4>
+                                    <p>Dedicated support and maintenance services</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i data-lucide="trending-up"></i>
+                                </div>
+                                <div class="highlight-content">
+                                    <h4>Growth Focused</h4>
+                                    <p>Solutions designed to scale with your business</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about__skills">
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h4>Frontend</h4>
+                                <div class="skill-items">
+                                    <span class="skill-tag">React</span>
+                                    <span class="skill-tag">Next.js</span>
+                                    <span class="skill-tag">TypeScript</span>
+                                    <span class="skill-tag">Tailwind CSS</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Backend</h4>
+                                <div class="skill-items">
+                                    <span class="skill-tag">Node.js</span>
+                                    <span class="skill-tag">Express</span>
+                                    <span class="skill-tag">MongoDB</span>
+                                    <span class="skill-tag">PostgreSQL</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Design</h4>
+                                <div class="skill-items">
+                                    <span class="skill-tag">Figma</span>
+                                    <span class="skill-tag">Adobe XD</span>
+                                    <span class="skill-tag">Photoshop</span>
+                                    <span class="skill-tag">Illustrator</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Tools</h4>
+                                <div class="skill-items">
+                                    <span class="skill-tag">Git</span>
+                                    <span class="skill-tag">Docker</span>
+                                    <span class="skill-tag">AWS</span>
+                                    <span class="skill-tag">Vercel</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services section" id="services">
+            <div class="services__container container">
+                <div class="section-header">
+                    <span class="section-tag">Services</span>
+                    <h2 class="section__title">
+                        Comprehensive Digital Solutions 
+                        <span class="gradient-text">Tailored for Success</span>
+                    </h2>
+                </div>
+                
+                <div class="services__grid">
+                    <div class="service-card" data-tilt>
+                        <div class="service-card__header">
+                            <div class="service-card__icon">
+                                <i data-lucide="monitor"></i>
+                            </div>
+                            <div class="service-card__badge">Popular</div>
+                        </div>
+                        <h3 class="service-card__title">Web Development</h3>
+                        <p class="service-card__description">
+                            Custom websites built with cutting-edge technologies for optimal performance, 
+                            SEO optimization, and exceptional user experience across all devices.
+                        </p>
+                        <ul class="service-card__features">
+                            <li><i data-lucide="check"></i> Responsive Design</li>
+                            <li><i data-lucide="check"></i> SEO Optimized</li>
+                            <li><i data-lucide="check"></i> Fast Loading</li>
+                            <li><i data-lucide="check"></i> Modern Tech Stack</li>
+                        </ul>
+                        <div class="service-card__footer">
+                            <span class="service-card__price">From $999</span>
+                            <a href="#contact" class="service-card__btn">
+                                <span>Get Started</span>
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card featured" data-tilt>
+                        <div class="service-card__header">
+                            <div class="service-card__icon">
+                                <i data-lucide="shopping-cart"></i>
+                            </div>
+                            <div class="service-card__badge">Best Value</div>
+                        </div>
+                        <h3 class="service-card__title">E-commerce Solutions</h3>
+                        <p class="service-card__description">
+                            Complete online stores with payment integration, inventory management, 
+                            analytics, and conversion optimization to maximize your sales potential.
+                        </p>
+                        <ul class="service-card__features">
+                            <li><i data-lucide="check"></i> Payment Gateway</li>
+                            <li><i data-lucide="check"></i> Inventory Management</li>
+                            <li><i data-lucide="check"></i> Analytics Dashboard</li>
+                            <li><i data-lucide="check"></i> Mobile Commerce</li>
+                        </ul>
+                        <div class="service-card__footer">
+                            <span class="service-card__price">From $1,999</span>
+                            <a href="#contact" class="service-card__btn">
+                                <span>Get Started</span>
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card" data-tilt>
+                        <div class="service-card__header">
+                            <div class="service-card__icon">
+                                <i data-lucide="palette"></i>
+                            </div>
+                        </div>
+                        <h3 class="service-card__title">UI/UX Design</h3>
+                        <p class="service-card__description">
+                            Beautiful, intuitive designs that captivate users and drive engagement. 
+                            From wireframes to high-fidelity prototypes and brand identity.
+                        </p>
+                        <ul class="service-card__features">
+                            <li><i data-lucide="check"></i> User Research</li>
+                            <li><i data-lucide="check"></i> Wireframing</li>
+                            <li><i data-lucide="check"></i> Prototyping</li>
+                            <li><i data-lucide="check"></i> Brand Identity</li>
+                        </ul>
+                        <div class="service-card__footer">
+                            <span class="service-card__price">From $799</span>
+                            <a href="#contact" class="service-card__btn">
+                                <span>Get Started</span>
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card" data-tilt>
+                        <div class="service-card__header">
+                            <div class="service-card__icon">
+                                <i data-lucide="smartphone"></i>
+                            </div>
+                        </div>
+                        <h3 class="service-card__title">Mobile Apps</h3>
+                        <p class="service-card__description">
+                            Native and cross-platform mobile applications that deliver seamless 
+                            user experiences and robust functionality for iOS and Android.
+                        </p>
+                        <ul class="service-card__features">
+                            <li><i data-lucide="check"></i> Cross-Platform</li>
+                            <li><i data-lucide="check"></i> Native Performance</li>
+                            <li><i data-lucide="check"></i> App Store Ready</li>
+                            <li><i data-lucide="check"></i> Push Notifications</li>
+                        </ul>
+                        <div class="service-card__footer">
+                            <span class="service-card__price">From $2,499</span>
+                            <a href="#contact" class="service-card__btn">
+                                <span>Get Started</span>
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card" data-tilt>
+                        <div class="service-card__header">
+                            <div class="service-card__icon">
+                                <i data-lucide="zap"></i>
+                            </div>
+                        </div>
+                        <h3 class="service-card__title">Performance Optimization</h3>
+                        <p class="service-card__description">
+                            Speed up your existing website with advanced optimization techniques, 
+                            improving user experience and search engine rankings.
+                        </p>
+                        <ul class="service-card__features">
+                            <li><i data-lucide="check"></i> Speed Optimization</li>
+                            <li><i data-lucide="check"></i> SEO Enhancement</li>
+                            <li><i data-lucide="check"></i> Core Web Vitals</li>
+                            <li><i data-lucide="check"></i> Performance Monitoring</li>
+                        </ul>
+                        <div class="service-card__footer">
+                            <span class="service-card__price">From $599</span>
+                            <a href="#contact" class="service-card__btn">
+                                <span>Get Started</span>
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card" data-tilt>
+                        <div class="service-card__header">
+                            <div class="service-card__icon">
+                                <i data-lucide="headphones"></i>
+                            </div>
+                        </div>
+                        <h3 class="service-card__title">Consultation & Support</h3>
+                        <p class="service-card__description">
+                            Expert guidance on technology choices, architecture decisions, 
+                            and ongoing support to ensure your digital success.
+                        </p>
+                        <ul class="service-card__features">
+                            <li><i data-lucide="check"></i> Technical Consultation</li>
+                            <li><i data-lucide="check"></i> Code Review</li>
+                            <li><i data-lucide="check"></i> Maintenance</li>
+                            <li><i data-lucide="check"></i> 24/7 Support</li>
+                        </ul>
+                        <div class="service-card__footer">
+                            <span class="service-card__price">From $99/hr</span>
+                            <a href="#contact" class="service-card__btn">
+                                <span>Get Started</span>
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="services__decorations">
+                <div class="service-decoration service-decoration-1">
+                    <i data-lucide="cpu"></i>
+                </div>
+                <div class="service-decoration service-decoration-2">
+                    <i data-lucide="layers"></i>
+                </div>
+                <div class="service-decoration service-decoration-3">
+                    <i data-lucide="settings"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio section" id="work">
+            <div class="portfolio__container container">
+                <div class="section-header">
+                    <span class="section-tag">Portfolio</span>
+                    <h2 class="section__title">
+                        Featured Projects That 
+                        <span class="gradient-text">Drive Results</span>
+                    </h2>
+                </div>
+                
+                <div class="portfolio__filters">
+                    <button class="filter-btn active" data-filter="all">
+                        <i data-lucide="grid-3x3"></i>
+                        <span>All Projects</span>
+                    </button>
+                    <button class="filter-btn" data-filter="web">
+                        <i data-lucide="monitor"></i>
+                        <span>Web Development</span>
+                    </button>
+                    <button class="filter-btn" data-filter="ecommerce">
+                        <i data-lucide="shopping-cart"></i>
+                        <span>E-commerce</span>
+                    </button>
+                    <button class="filter-btn" data-filter="design">
+                        <i data-lucide="palette"></i>
+                        <span>UI/UX Design</span>
+                    </button>
+                    <button class="filter-btn" data-filter="mobile">
+                        <i data-lucide="smartphone"></i>
+                        <span>Mobile Apps</span>
+                    </button>
+                </div>
+                
+                <div class="portfolio__grid">
+                    <div class="portfolio-item" data-category="web ecommerce" data-project="resort-booking">
+                        <div class="portfolio-item__image">
+                            <img src="resort-booking.jpg" alt="Resort Booking System" loading="lazy">
+                            <div class="portfolio-item__overlay">
+                                <div class="portfolio-item__content">
+                                    <span class="portfolio-item__category">Web Development</span>
+                                    <h3 class="portfolio-item__title">Resort Booking System</h3>
+                                    <p class="portfolio-item__description">
+                                        Complete booking platform with real-time availability and automated PDF generation
+                                    </p>
+                                    <div class="portfolio-item__tech">
+                                        <span>React</span>
+                                        <span>Node.js</span>
+                                        <span>MongoDB</span>
+                                    </div>
+                                </div>
+                                <div class="portfolio-item__actions">
+                                    <button class="portfolio-btn" data-action="view">
+                                        <i data-lucide="eye"></i>
+                                    </button>
+                                    <button class="portfolio-btn" data-action="external">
+                                        <i data-lucide="external-link"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item__info">
+                            <div class="portfolio-item__stats">
+                                <div class="stat">
+                                    <i data-lucide="trending-up"></i>
+                                    <span>40% ↑ Bookings</span>
+                                </div>
+                                <div class="stat">
+                                    <i data-lucide="clock"></i>
+                                    <span>2 weeks</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item featured" data-category="ecommerce web" data-project="ecommerce-store">
+                        <div class="portfolio-item__image">
+                            <img src="ecommerce-demo.jpg" alt="E-commerce Fashion Store" loading="lazy">
+                            <div class="portfolio-item__overlay">
+                                <div class="portfolio-item__content">
+                                    <span class="portfolio-item__category">E-commerce</span>
+                                    <h3 class="portfolio-item__title">Fashion E-commerce Store</h3>
+                                    <p class="portfolio-item__description">
+                                        Modern online store with advanced filtering, wishlist, and seamless checkout
+                                    </p>
+                                    <div class="portfolio-item__tech">
+                                        <span>Next.js</span>
+                                        <span>Stripe</span>
+                                        <span>Tailwind</span>
+                                    </div>
+                                </div>
+                                <div class="portfolio-item__actions">
+                                    <button class="portfolio-btn" data-action="view">
+                                        <i data-lucide="eye"></i>
+                                    </button>
+                                    <button class="portfolio-btn" data-action="external">
+                                        <i data-lucide="external-link"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item__info">
+                            <div class="portfolio-item__stats">
+                                <div class="stat">
+                                    <i data-lucide="trending-up"></i>
+                                    <span>150% ↑ Sales</span>
+                                </div>
+                                <div class="stat">
+                                    <i data-lucide="clock"></i>
+                                    <span>3 weeks</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item" data-category="design web" data-project="resort-website">
+                        <div class="portfolio-item__image">
+                            <img src="resort-website.jpg" alt="Luxury Resort Website" loading="lazy">
+                            <div class="portfolio-item__overlay">
+                                <div class="portfolio-item__content">
+                                    <span class="portfolio-item__category">UI/UX Design</span>
+                                    <h3 class="portfolio-item__title">Luxury Resort Website</h3>
+                                    <p class="portfolio-item__description">
+                                        Immersive website design with stunning visuals and smooth animations
+                                    </p>
+                                    <div class="portfolio-item__tech">
+                                        <span>Figma</span>
+                                        <span>GSAP</span>
+                                        <span>Three.js</span>
+                                    </div>
+                                </div>
+                                <div class="portfolio-item__actions">
+                                    <button class="portfolio-btn" data-action="view">
+                                        <i data-lucide="eye"></i>
+                                    </button>
+                                    <button class="portfolio-btn" data-action="external">
+                                        <i data-lucide="external-link"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item__info">
+                            <div class="portfolio-item__stats">
+                                <div class="stat">
+                                    <i data-lucide="trending-up"></i>
+                                    <span>60% ↑ Engagement</span>
+                                </div>
+                                <div class="stat">
+                                    <i data-lucide="clock"></i>
+                                    <span>4 weeks</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item" data-category="mobile design" data-project="fitness-app">
+                        <div class="portfolio-item__image">
+                            <img src="fitness-app.jpg" alt="Fitness Tracking App" loading="lazy">
+                            <div class="portfolio-item__overlay">
+                                <div class="portfolio-item__content">
+                                    <span class="portfolio-item__category">Mobile App</span>
+                                    <h3 class="portfolio-item__title">Fitness Tracking App</h3>
+                                    <p class="portfolio-item__description">
+                                        Comprehensive fitness app with workout tracking and social features
+                                    </p>
+                                    <div class="portfolio-item__tech">
+                                        <span>React Native</span>
+                                        <span>Firebase</span>
+                                        <span>Redux</span>
+                                    </div>
+                                </div>
+                                <div class="portfolio-item__actions">
+                                    <button class="portfolio-btn" data-action="view">
+                                        <i data-lucide="eye"></i>
+                                    </button>
+                                    <button class="portfolio-btn" data-action="external">
+                                        <i data-lucide="external-link"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item__info">
+                            <div class="portfolio-item__stats">
+                                <div class="stat">
+                                    <i data-lucide="trending-up"></i>
+                                    <span>10K+ Downloads</span>
+                                </div>
+                                <div class="stat">
+                                    <i data-lucide="clock"></i>
+                                    <span>6 weeks</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item" data-category="web design" data-project="crypto-dashboard">
+                        <div class="portfolio-item__image">
+                            <img src="crypto-dashboard.jpg" alt="Crypto Trading Dashboard" loading="lazy">
+                            <div class="portfolio-item__overlay">
+                                <div class="portfolio-item__content">
+                                    <span class="portfolio-item__category">Web App</span>
+                                    <h3 class="portfolio-item__title">Crypto Trading Dashboard</h3>
+                                    <p class="portfolio-item__description">
+                                        Real-time cryptocurrency trading platform with advanced analytics
+                                    </p>
+                                    <div class="portfolio-item__tech">
+                                        <span>Vue.js</span>
+                                        <span>Chart.js</span>
+                                        <span>WebSocket</span>
+                                    </div>
+                                </div>
+                                <div class="portfolio-item__actions">
+                                    <button class="portfolio-btn" data-action="view">
+                                        <i data-lucide="eye"></i>
+                                    </button>
+                                    <button class="portfolio-btn" data-action="external">
+                                        <i data-lucide="external-link"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item__info">
+                            <div class="portfolio-item__stats">
+                                <div class="stat">
+                                    <i data-lucide="trending-up"></i>
+                                    <span>$2M+ Volume</span>
+                                </div>
+                                <div class="stat">
+                                    <i data-lucide="clock"></i>
+                                    <span>8 weeks</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item" data-category="ecommerce web" data-project="food-delivery">
+                        <div class="portfolio-item__image">
+                            <img src="food-delivery.jpg" alt="Food Delivery Platform" loading="lazy">
+                            <div class="portfolio-item__overlay">
+                                <div class="portfolio-item__content">
+                                    <span class="portfolio-item__category">E-commerce</span>
+                                    <h3 class="portfolio-item__title">Food Delivery Platform</h3>
+                                    <p class="portfolio-item__description">
+                                        Multi-vendor food delivery platform with real-time tracking
+                                    </p>
+                                    <div class="portfolio-item__tech">
+                                        <span>React</span>
+                                        <span>Express</span>
+                                        <span>Socket.io</span>
+                                    </div>
+                                </div>
+                                <div class="portfolio-item__actions">
+                                    <button class="portfolio-btn" data-action="view">
+                                        <i data-lucide="eye"></i>
+                                    </button>
+                                    <button class="portfolio-btn" data-action="external">
+                                        <i data-lucide="external-link"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item__info">
+                            <div class="portfolio-item__stats">
+                                <div class="stat">
+                                    <i data-lucide="trending-up"></i>
+                                    <span>500+ Orders/day</span>
+                                </div>
+                                <div class="stat">
+                                    <i data-lucide="clock"></i>
+                                    <span>5 weeks</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio__cta">
+                    <p>Interested in working together?</p>
+                    <a href="#contact" class="btn btn--primary">
+                        <span>Start Your Project</span>
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials section">
+            <div class="testimonials__container container">
+                <div class="section-header">
+                    <span class="section-tag">Testimonials</span>
+                    <h2 class="section__title">
+                        What Clients Say About 
+                        <span class="gradient-text">My Work</span>
+                    </h2>
+                </div>
+                
+                <div class="testimonials__slider" id="testimonials-slider">
+                    <div class="testimonial-slide active">
+                        <div class="testimonial">
+                            <div class="testimonial__rating">
+                                <i data-lucide="star" class="star filled"></i>
+                                <i data-lucide="star" class="star filled"></i>
+                                <i data-lucide="star" class="star filled"></i>
+                                <i data-lucide="star" class="star filled"></i>
+                                <i data-lucide="star" class="star filled"></i>
+                                <i data-lucide="star" class="star filled"></i>
+                            </div>
+                            <p class="testimonial__text">
+                                "Bineesh transformed our outdated website into a modern, high-converting platform. 
+                                The attention to detail and technical expertise exceeded our expectations. Our online 
+                                sales increased by 150% within the first month!"
+                            </p>
+                            <div class="testimonial__author">
+                                <div class="testimonial__avatar">
+                                    <img src="client-sarah.jpg" alt="Sarah Johnson" loading="lazy">
+                                </div>
+                                <div class="testimonial__info">
+                                    <strong>Sarah Johnson</strong>
+                                    <span>CEO, Fashion Forward</span>
+                                    <div class="testimonial__company">
+                                        <i data-lucide="building"></i>
+                                        <span>E-commerce</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="testimonial">
+                            <div class="testimonial__rating">
+                                <i data-lucide="star" class="star filled"></i>
+                                <i data-lucide="star" class="star filled"></i>
+                                <i data-lucide="star" class="star filled"></i>
+                                <i data-lucide="star" class="star filled"></i>
+                                <i data-lucide="star" class="star filled"></i>
+                            </div>
+                            <p class="testimonial__text">
+                                "The resort booking system Bineesh created revolutionized our operations. 
+                                The automated PDF generation and seamless user experience reduced our 
+                                administrative workload by 60% while improving customer satisfaction."
+                            </p>
+                            <div class="testimonial__author">
+                                <div class="testimonial__avatar">
+                                    <img src="client-michael.jpg" alt="Michael Chen" loading="lazy">
+                                </div>
+                                <div class="testimonial__info">
+                                    <strong>Michael Chen</strong>
+                                    <span>Manager, Paradise Resort</span>
+                                    <div class="testimonial__company">
+                                        <i data-lucide="building"></i>
+                                        <span>Hospitality</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="testimonial">
+                            <div class="testimonial__rating">
+                                <i data-lucide="star" class="star filled"></i>
+                                <i data-lucide="star" class="star filled"></i>
+                                <i data-lucide="star" class="star filled"></i>
+                                <i data-lucide="star" class="star filled"></i>
+                                <i data-lucide="star" class="star filled"></i>
+                            </div>
+                            <p class="testimonial__text">
+                                "Working with Bineesh was an absolute pleasure. His creative vision and 
+                                technical skills brought our mobile app idea to life perfectly. The app 
+                                has received over 10,000 downloads in just two months!"
+                            </p>
+                            <div class="testimonial__author">
+                                <div class="testimonial__avatar">
+                                    <img src="client-emma.jpg" alt="Emma Rodriguez" loading="lazy">
+                                </div>
+                                <div class="testimonial__info">
+                                    <strong>Emma Rodriguez</strong>
+                                    <span>Founder, FitTrack</span>
+                                    <div class="testimonial__company">
+                                        <i data-lucide="building"></i>
+                                        <span>Health & Fitness</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonials__navigation">
+                    <button class="testimonial-nav prev" id="testimonial-prev">
+                        <i data-lucide="chevron-left"></i>
+                    </button>
+                    <div class="testimonials__dots">
+                        <button class="testimonial-dot active" data-slide="0"></button>
+                        <button class="testimonial-dot" data-slide="1"></button>
+                        <button class="testimonial-dot" data-slide="2"></button>
+                    </div>
+                    <button class="testimonial-nav next" id="testimonial-next">
+                        <i data-lucide="chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="contact__container container">
+                <div class="section-header">
+                    <span class="section-tag">Contact</span>
+                    <h2 class="section__title">
+                        Let's Create Something 
+                        <span class="gradient-text">Amazing Together</span>
+                    </h2>
+                </div>
+                
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <div class="contact__text">
+                            <h3>Ready to start your project?</h3>
+                            <p>
+                                I'm always excited to work on new projects and help businesses 
+                                achieve their digital goals. Let's discuss how we can bring 
+                                your vision to life.
+                            </p>
+                        </div>
+                        
+                        <div class="contact__methods">
+                            <div class="contact__item">
+                                <div class="contact__icon">
+                                    <i data-lucide="mail"></i>
+                                </div>
+                                <div class="contact__details">
+                                    <h4>Email</h4>
+                                    <a href="mailto:hello@bineeshks.com">hello@bineeshks.com</a>
+                                    <span class="contact__note">I'll respond within 24 hours</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact__item">
+                                <div class="contact__icon">
+                                    <i data-lucide="phone"></i>
+                                </div>
+                                <div class="contact__details">
+                                    <h4>Phone</h4>
+                                    <a href="tel:+1234567890">+1 (234) 567-890</a>
+                                    <span class="contact__note">Available Mon-Fri, 9AM-6PM</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact__item">
+                                <div class="contact__icon">
+                                    <i data-lucide="message-circle"></i>
+                                </div>
+                                <div class="contact__details">
+                                    <h4>WhatsApp</h4>
+                                    <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-link">
+                                        <i data-lucide="message-circle"></i>
+                                        <span>Chat on WhatsApp</span>
+                                    </a>
+                                    <span class="contact__note">Quick response guaranteed</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__social">
+                            <h4>Follow me on social media</h4>
+                            <div class="social-links">
+                                <a href="#" class="social-link" aria-label="GitHub">
+                                    <i data-lucide="github"></i>
+                                </a>
+                                <a href="#" class="social-link" aria-label="LinkedIn">
+                                    <i data-lucide="linkedin"></i>
+                                </a>
+                                <a href="#" class="social-link" aria-label="Twitter">
+                                    <i data-lucide="twitter"></i>
+                                </a>
+                                <a href="#" class="social-link" aria-label="Instagram">
+                                    <i data-lucide="instagram"></i>
+                                </a>
+                                <a href="#" class="social-link" aria-label="Dribbble">
+                                    <i data-lucide="dribbble"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact__form" id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                                <div class="form-icon">
+                                    <i data-lucide="user"></i>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                                <div class="form-icon">
+                                    <i data-lucide="mail"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a service</option>
+                                <option value="web-development">Web Development</option>
+                                <option value="ecommerce">E-commerce Solution</option>
+                                <option value="ui-ux-design">UI/UX Design</option>
+                                <option value="mobile-app">Mobile App</option>
+                                <option value="consultation">Consultation</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <div class="form-icon">
+                                <i data-lucide="briefcase"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget">Project Budget</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select budget range</option>
+                                <option value="under-1k">Under $1,000</option>
+                                <option value="1k-5k">$1,000 - $5,000</option>
+                                <option value="5k-10k">$5,000 - $10,000</option>
+                                <option value="10k-25k">$10,000 - $25,000</option>
+                                <option value="25k-plus">$25,000+</option>
+                            </select>
+                            <div class="form-icon">
+                                <i data-lucide="dollar-sign"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Project Details *</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project, goals, and any specific requirements..." required></textarea>
+                            <div class="form-icon">
+                                <i data-lucide="message-square"></i>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn--primary btn--full">
+                            <span>Send Message</span>
+                            <i data-lucide="send"></i>
+                        </button>
+                        
+                        <p class="form-note">
+                            <i data-lucide="shield-check"></i>
+                            Your information is secure and will never be shared with third parties.
+                        </p>
+                    </form>
+                </div>
+            </div>
+            <div class="contact__decorations">
+                <div class="contact-decoration contact-decoration-1">
+                    <i data-lucide="mail"></i>
+                </div>
+                <div class="contact-decoration contact-decoration-2">
+                    <i data-lucide="phone"></i>
+                </div>
+                <div class="contact-decoration contact-decoration-3">
+                    <i data-lucide="message-circle"></i>
+                </div>
+                <div class="contact-decoration contact-decoration-4">
+                    <i data-lucide="map-pin"></i>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <span class="logo-icon">⚡</span>
+                        <span class="logo-text">Bineesh K S</span>
+                    </div>
+                    <p class="footer__description">
+                        Crafting exceptional digital experiences that drive business growth 
+                        and user engagement through innovative design and development.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <i data-lucide="github"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i data-lucide="twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i data-lucide="instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Dribbble">
+                            <i data-lucide="dribbble"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer__links">
+                    <div class="footer__group">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#work">Portfolio</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__group">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Web Development</a></li>
+                            <li><a href="#services">E-commerce</a></li>
+                            <li><a href="#services">UI/UX Design</a></li>
+                            <li><a href="#services">Mobile Apps</a></li>
+                            <li><a href="#services">Consultation</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__group">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li>
+                                <i data-lucide="mail"></i>
+                                <a href="mailto:hello@bineeshks.com">hello@bineeshks.com</a>
+                            </li>
+                            <li>
+                                <i data-lucide="phone"></i>
+                                <a href="tel:+1234567890">+1 (234) 567-890</a>
+                            </li>
+                            <li>
+                                <i data-lucide="map-pin"></i>
+                                <span>Kerala, India</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <div class="footer__copyright">
+                    <p>&copy; 2024 Bineesh K S. All rights reserved.</p>
+                </div>
+                <div class="footer__legal">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modal -->
+    <div class="modal" id="portfolio-modal">
+        <div class="modal__overlay" id="modal-overlay"></div>
+        <div class="modal__content">
+            <button class="modal__close" id="modal-close">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="modal__body" id="modal-body">
+                <!-- Dynamic content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Toast -->
+    <div class="toast" id="success-toast">
+        <div class="toast__content">
+            <div class="toast__icon">
+                <i data-lucide="check-circle"></i>
+            </div>
+            <div class="toast__message">
+                <strong>Success!</strong>
+                <span>Your message has been sent successfully.</span>
+            </div>
+        </div>
+        <button class="toast__close" id="toast-close">
+            <i data-lucide="x"></i>
+        </button>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <div class="floating-bg-elements">
+        <div class="bg-element bg-element-1">
+            <i data-lucide="code"></i>
+        </div>
+        <div class="bg-element bg-element-2">
+            <i data-lucide="paintbrush"></i>
+        </div>
+        <div class="bg-element bg-element-3">
+            <i data-lucide="layout"></i>
+        </div>
+        <div class="bg-element bg-element-4">
+            <i data-lucide="target"></i>
+        </div>
+        <div class="bg-element bg-element-5">
+            <i data-lucide="award"></i>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
